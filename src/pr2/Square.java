@@ -1,0 +1,31 @@
+package pr2;
+import java.lang.*;
+public class Square extends Rectangle{
+    public Square(){};
+    public Square(double side){
+        this.length=side;
+        this.width=side;
+    }
+    public Square(double side, String color, boolean filled){
+        this.width=side;
+        this.length=side;
+        this.color=color;
+        this.filled=filled;
+    }
+    public double getSide(){
+        return this.length;
+    }
+    public void setSide(double side){
+        this.length=side;
+        this.width=side;
+    }
+    public void setWidth(double side){
+        this.width=side;
+    }
+    public void setLength(double side){
+        this.length=side;
+    }
+    public String toString(){
+        return "the area of square is "+getArea()+", perimetr is "+getPerimetr();
+    }
+}
